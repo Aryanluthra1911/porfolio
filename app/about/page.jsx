@@ -24,7 +24,7 @@ const page = () => {
     }
     return (
         <div className='w-full h-auto bg-[#111111] text-white pt-25 flex justify-center'>
-            <div className=' w-[70%] h-auto flex flex-col justify-start items-start sm:items-center pt-6 space-y-10'>
+            <div className='w-[90%] lg:w-[70%] h-auto flex flex-col justify-start items-start sm:items-center pt-6 space-y-10'>
                 <Blurtxt className='text-3xl sm:text-4xl sm:w-[90%] w:[90%] h-20 font-semibold items-center' text='About Me'/>
                 <Shinytxt text={'I’m a passionate Full-Stack Web Developer who loves building scalable, user-friendly, and impactful digital solutions. With a strong command over both frontend and backend development, I enjoy turning ideas into reality—whether it’s crafting smooth user interfaces or developing efficient server-side logic.'} className='w-[90%] text-lg sm:text-2xl' speed={2}/>
                 <Shinytxt text={'My approach to development is user-first and performance-driven. I focus on writing clean, maintainable code and building products that not only work flawlessly but also deliver great experiences to the end users. Along with development, I also have an eye for UI/UX design, which helps me create solutions that are both functional and visually engaging.'} className='w-[90%] text-lg sm:text-2xl' speed={2}/>
