@@ -7,7 +7,7 @@ const LogoBlock = ({src, title}) => {
     return (
         <div
             onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)} className='h-15 w-15 flex flex-col justify-start items-center relative'>
+            onMouseLeave={() => setHover(false)} className='h-8 w-8 lg:h-15 lg:w-15 flex flex-col justify-start items-center relative'>
             <div className={`h-[70%] w-full flex justify-center items-center transition-all duration-300 hover:shadow-md hover:scale-105`}>
                 <img 
                     src={src} 

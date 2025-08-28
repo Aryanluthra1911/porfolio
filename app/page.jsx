@@ -33,45 +33,45 @@ const page = () => {
   return (
     <div className='w-full h-auto bg-[#111111] text-white pt-25 flex justify-center'>
       <div className='w-[90%] h-auto flex flex-col justify-center items-center gap-8'>
-        <div className='w-[70%] h-55 border-2 rounded-2xl border-[#353535] p-4 flex flex-col justify-around items-center'>
-          <div className='w-full h-[40%] flex justify-between'>
-            <div className='w-[50%] h-full flex flex-col'>
-              <Blurtxt text="Hi, I'm Aryan Luthra 👋" className='text-3xl font-semibold '/>
+        <div className=' w-[90%] lg:w-[70%] auto border-2 rounded-2xl border-[#353535] p-4 flex flex-col justify-around items-center'>
+          <div className='w-full h-auto flex justify-between'>
+            <div className=' w-[45%] sm:w-[50%] h-full flex flex-col'>
+              <Blurtxt text="Hi, I'm Aryan Luthra 👋" className=' text-lg lg:text-3xl font-semibold '/>
               <div className='flex items-center'>
                 <img src="/location.svg" alt="" className='w-5 h-5' />
-                <Shinytxt text={` Delhi, India`} className=' text-xl font-semibold' speed={'2'}/>
+                <Shinytxt text={` Delhi, India`} className='text-md lg:text-xl font-semibold' speed={'2'}/>
               </div>
             </div>
-            <div className='w-[40%] h-full flex  items-center justify-around'>
-              <Button src='/mail.svg' onClick={mailHandler} className={" w-8 "}/>
-              <Button src='/linkedin.svg' onClick={linkedinHandler} className={'w-7'}/>
-              <Button src='/github.svg' onClick={githubHandler}className={'w-8 '}/>
-              <Button src='/discord.svg' onClick={discordHandler} className={' w-8 '}/>
-              <Button src='/whatsapp.svg' onClick={whatsappHandler} className={'w-8 '}/>
+            <div className='w-[55%] sm:w-[45%] h-full flex  items-center justify-around'>
+              <Button src='/mail.svg' onClick={mailHandler} className={"w-4 lg:w-8 "}/>
+              <Button src='/linkedin.svg' onClick={linkedinHandler} className={'w-4 lg:w-7'}/>
+              <Button src='/github.svg' onClick={githubHandler}className={'w-4 lg:w-8 '}/>
+              <Button src='/discord.svg' onClick={discordHandler} className={'w-4 lg:w-8 '}/>
+              <Button src='/whatsapp.svg' onClick={whatsappHandler} className={'w-4 lg:w-8 '}/>
             </div>
           </div>
-          <div className='w-full h-[50%] flex flex-col text-xl justify-center items-center'>
+          <div className='w-full h-[50%] flex flex-col text-md md:text-xl justify-center items-center'>
             I’m a passionate Full-Stack Web Developer who loves building scalable, user-friendly, and impactful digital solutions. With a strong command over both frontend and backend
             <Shinytxt onClick={()=>{
               router.push("/about")
-            }} className='text-xl text-[#7a7a7a] font-semibold h-full w-full flex' text={'read more...'} speed={'3'}/>
+            }} className='text-md md:text-xl text-[#7a7a7a] font-semibold h-full w-full flex' text={'read more...'} speed={'3'}/>
             
           </div>
         </div>
-        <div className='w-[70%] h-auto p-2 gap-15 flex flex-col items-center'>
-          <Blurtxt text='What I work with' className='text-4xl font-bold h-[15%] w-full'/>
+        <div className='w-[90%] lg:w-[70%] h-auto p-2 gap-15 flex flex-col items-center'>
+          <Blurtxt text='What I work with' className=' text-xl lg:text-4xl font-bold h-[15%] w-full'/>
           <div className='h-auto w-[95%] flex flex-wrap items-start gap-7'>
             {techStacks.map((idx,key)=>(
               <LogoBlock title={idx.title} src={idx.src} key={key}/>
             ))}
           </div>
         </div>
-        <div className='w-[70%] h-50 flex flex-col items-center'>
-          <Blurtxt text='Experience' className='text-4xl font-bold h-[15%] w-full'/>
+        <div className='w-[90%] lg:w-[70%] h-50 flex flex-col items-center'>
+          <Blurtxt text='Experience' className='text-xl lg:text-4xl font-bold h-[15%] w-full'/>
         </div>
-        <div className='w-[70%] h-auto  flex flex-col items-center gap-10'>
+        <div className='w-[90%] lg:w-[70%] h-auto  flex flex-col items-center gap-10'>
           <div className='h-15 w-full flex justify-between items-center '>
-            <Blurtxt text='Projects' className=' flex items-center justify-start text-4xl font-bold'/>
+            <Blurtxt text='Projects' className=' flex items-center justify-start text-xl lg:text-4xl font-bold'/>
             <div onClick={()=>{
               router.push('/projects')
             }} className='h-[20%]  flex items-center justify-baseline hover:underline hover:text-[#7a7a7a]'>
