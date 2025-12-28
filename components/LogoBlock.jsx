@@ -8,18 +8,16 @@ const LogoBlock = ({src, title}) => {
         <div
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)} className='h-8 w-8 lg:h-15 lg:w-15 flex flex-col justify-start items-center relative'>
-            <div className={`h-[70%] w-full flex justify-center items-center transition-all duration-300 hover:shadow-md hover:scale-105`}>
+            <div className={`h-[70%] w-full flex justify-center items-center transition-all duration-400 ease-out hover:shadow-md  hover:scale-105`}>
                 <img 
                     src={src} 
                     alt="" 
-                    className={`h-full w-full object-contain transition-all duration-300 ${
-                        hover ? 'filter-none' : 'grayscale'
-                    }`}
+                    className={`h-full w-full object-contain transition-all duration-300 grayscale hover:filter-none `}
                 />
             </div>
             <div className={`
                 text-[#7a7a7a] text-sm font-medium text-center px-1 
-                transition-all duration-300 ease-in-out
+                transition-all duration-1000 ease-in-out 
                 ${hover 
                     ? 'opacity-100 transform translate-y-0' 
                     : 'opacity-0 transform -translate-y-2'

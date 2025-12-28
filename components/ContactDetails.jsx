@@ -11,9 +11,6 @@ const ContactDetails = () => {
     const githubHandler = ()=>{
         window.open('https://github.com/Aryanluthra1911','_blank')
     }
-    const whatsappHandler = () => {
-        window.open("https://wa.me/917048997027", "_blank")
-    }
     const discordHandler = () => {
         window.open("https://discord.com/users/123456789012345678", "_blank")
     }
@@ -25,7 +22,6 @@ const ContactDetails = () => {
                 <Button src='/linkedin.svg' onClick={linkedinHandler} className={'w-8'}/>
                 <Button src='/github.svg' onClick={githubHandler}className={'w-11'}/>
                 <Button src='/discord.svg' onClick={discordHandler} className={'w-12'}/>
-                <Button src='/whatsapp.svg' onClick={whatsappHandler} className={'w-11'}/>
             </div>
         </div>
     )
